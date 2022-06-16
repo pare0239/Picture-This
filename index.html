@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Picture This!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Picture This!</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <header class="header">
+      <div class="title">
+        <h1>Picture This!</h1>
+        <h4>My Really Cool Blog Post</h4>
+      </div>
+      <picture>
+        <source
+          srcset="images/square_museum-640_x_640.jpg"
+          media="(min-width:960px"
+          )
+        />
+        <source
+          srcset="images/landscape_museum-1024_x_576.jpg"
+          media="(min-width:640px)"
+        />
+        <source
+          srcset="images/landscape_museum-640_x_360.jpg"
+          media="(min-width:320px)"
+        />
 
-<body>
-  <header class="header">
-    <div class="title">
-      <h1>Picture This!</h1>
-      <h4>My Really Cool Blog Post</h4>
-    </div>
-    <picture>
-      <source srcset="image/landscape_museum-320_x_180.jpg,
-                    image/landscape_museum-640_x_360.jpg 1.5x,
-                    image/landscape_museum-1024_x_576.jpg 2x"
-            media="(min-width: 960px)"/>
-
-       <source srcset="image/square_museum-1024_x_1024.jpg,
-                      image/square_museum-640_x_640.jpg 1.5x,
-                      image/square_museum-320_x_320.jpg 2x"
-            media="(min-width: 2400px)"/>
-
-    <img 
-         src="images/landscape_museum-640_x_360.jpg"
-         alt="Image of a museum">
-     
-    </picture>
-
-  </header>
-</body>
-
+        <img
+          src="images/landscape_museum-640_x_360.jpg"
+          alt="Image of a museum"
+        />
+      </picture>
+    </header>
+  </body>
 </html>
-
-
-
-
 
 <!-- 
 <source srcset="image/square_museum-640_x_640"
@@ -55,3 +52,10 @@ media="(min=width: 960px)"/>
               
         src="images/landscape_museum-640_x_360.jpg" 
         alt="Image of museum"> -->
+
+<!-- <picture>
+          <source srcset="images/fall-dog-1200.jpg" media="(min-width: 900px")>
+          <source srcset="images/fall-dog-900.jpg" media="(min-width: 640px")>
+          <source srcset="images/fall-dog-640.jpg" media="(min-width: 320px")>
+          <img src="images/fall-dog-900.jpg" alt="image of dog inn bed">
+      </picture> -->
